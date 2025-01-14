@@ -1,0 +1,29 @@
+Project Details:
+The project is a collaboration with Open AI and the Lenfest Institute as part of the super-customer initiative. 
+Developed for external use by the Philadelphia Inquirer newsroom, it is a RAG-powered chatbot enabling reporters to quickly search and understand past Inquirer coverage to streamline their research process for new stories. 
+It leverages a published archive of past Inquirer articles. 
+
+Responsible AI (RAI): 
+We add citation/reference to original articles into the generated answers to ground them for improved reliability/transparency.
+We evaluate performance using metrics from Azure Foundry to ensure that the tool is effective and performs well for reporters. 
+We also leverage the built in Azure Open AI responsible AI methods to scan the input and output of the tool. 
+The main focus of this is to safeguard against prompt injections. 
+Another common RAI category is harm (violence against self or others, sexual, etc.)
+Due to the nature of news coverage, which contains violent or harmful content, we have chosen not to implement this category of RAI harm as it is a possible use case for reporters. 
+However, we do want to safeguard against prompt injection using built in Azure Open AI methods 
+
+Privacy: 
+There is no privacy issue associated with the data we're storing and querying since this is a published archive of stories. 
+However, we do want to log user queries to better understand the system performance so we will need to ensure that users consent to this.
+
+Security: 
+-- Document security measures, identify risks. -- 
+
+Legal: 
+-- Outline legal requirements and engage legal contacts for review. -- 
+
+Compliance: 
+-- Ensure regulatory compliance and maintain communication with compliance contacts. -- 
+
+Learnings and Feedback: 
+-- Share insights on what works and what doesn’t to improve the process. -- 
